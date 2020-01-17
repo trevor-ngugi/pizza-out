@@ -1,0 +1,55 @@
+{% extends 'bootstrap/base.html'%}
+{% block content %}
+<head>
+        <title>Flask app</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pizza.css') }}">
+      </head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="../static/photos/chicken mushroom.jpg" alt="Card image cap">
+                    <div class="card-body"> chicken mushroom </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="../static/photos/chickenbbq.jpg" alt="Card image cap">
+                    <div class="card-body"> chicken bbq </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="../static/photos/chickentikka.jpg" alt="Card image cap">
+                    <div class="card-body"> chicken tikka </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="../static/photos/hawaiaan.jpg" alt="Card image cap">
+                    <div class="card-body"> hawaiaan </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="../static/photos/pepperoni.jpg" alt="Card image cap">
+                    <div class="card-body"> pepperoni </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="../static/photos/peri peri.jpeg" alt="Card image cap">
+                    <div class="card-body"> peri peri </div>
+                </div>
+            </div>
+        </div>
+        <button type="button">order now!</button>
+    </div>
+
+</body>
+
+{% endblock %}
